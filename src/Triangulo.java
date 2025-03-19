@@ -1,8 +1,9 @@
 import java.io.Serializable;
 
-public class Triangulo implements Figura {
+public class Triangulo implements Figura,Lados {
     private double lado;
     private double altura;
+    private int numLados = 3;
 
     public Triangulo(double lado, double altura) {
         this.lado = lado;
@@ -36,5 +37,10 @@ public class Triangulo implements Figura {
         System.out.println("La altura del Triangulo  es: " + this.altura);
         System.out.println("El perimetro del Triangulo  es: " + perimetro());
         System.out.println("El area del Triangulo es: " + area());
+    }
+
+    @Override
+    public int numLados() {
+        return this.numLados;
     }
 }

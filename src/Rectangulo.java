@@ -1,6 +1,7 @@
-public class Rectangulo implements Figura {
+public class Rectangulo implements Figura,Lados {
     private double ancho;
     private double alto;
+    private int numLados = 4;
 
     public Rectangulo(double alto, double ancho) {
         this.alto = alto;
@@ -39,4 +40,8 @@ public class Rectangulo implements Figura {
     }
 
 
+    @Override
+    public int numLados() {
+        return this.numLados;
+    }
 }

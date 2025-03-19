@@ -1,5 +1,6 @@
-public class Cuadrado implements Figura {
+public class Cuadrado implements Figura,Lados{
     private double lado;
+    private int numLados = 4;
 
     public Cuadrado(double lado) {
         this.lado = lado;
@@ -34,5 +35,11 @@ public class Cuadrado implements Figura {
         System.out.println("El perimetro del cuadrado es: " + perimetro());
         System.out.println("El area del cuadrado es : " + area());
 
+    }
+
+    @Override
+    public int numLados() {
+
+        return this.numLados;
     }
 }
