@@ -2,14 +2,14 @@ public class Rectangulo implements Figura {
     private double ancho;
     private double alto;
 
-    public Rectangulo() {
-        this.ancho = 0;
-        this.alto = 0;
+    public Rectangulo(double alto, double ancho) {
+        this.alto = alto;
+        this.ancho = ancho;
     }
 
     @Override
     public double perimetro() {
-        double perimetro = (ancho + alto) * 2;
+        double perimetro = (ancho + alto) * 2.0;
         return perimetro;
     }
 
