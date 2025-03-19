@@ -31,7 +31,7 @@ public class Cuadrado implements Figura,Lados{
 
     @Override
     public void imprimir() {
-        System.out.println("El lado del cuadrado es: " + this.lado);
+        System.out.print("El lado del cuadrado es: " + this.lado);
         System.out.println("El perimetro del cuadrado es: " + perimetro());
         System.out.println("El area del cuadrado es : " + area());
 

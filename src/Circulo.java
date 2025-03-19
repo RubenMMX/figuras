@@ -7,12 +7,12 @@ public class Circulo implements Figura {
 
     @Override
     public double perimetro() {
-        return Math.PI * (this.radius*2);
+        return 2 * Math.PI * this.radius;
     }
 
     @Override
     public double area() {
-       return Math.PI * Math.pow(this.radius,2);
+        return Math.PI * Math.pow(this.radius, 2);
     }
 
     @Override
